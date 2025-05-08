@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ek Tarfaa - The Untold Chapter</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f0f0f0; text-align: center; padding: 50px; }
+    .container { background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.2); max-width: 700px; margin: auto; }
+    h1 { font-size: 2em; margin-bottom: 20px; }
+    input[type="password"] { padding: 10px; font-size: 16px; width: 80%; margin-bottom: 20px; }
+    button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+    #story { display: none; text-align: left; margin-top: 30px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Ek Tarfaa - The Untold Chapter</h1>
+    <p>Please enter the password to read the story:</p>
+    <input type="password" id="passwordInput" placeholder="Enter password">
+    <br>
+    <button onclick="checkPassword()">Submit</button>
+
+    <div id="story">
+      <h2>My One-Sided Love Story</h2>
+      <p>
+        [Your story will appear here after entering the password.]
+
+        It was never easy loving someone in silence. Each day, I watched her smile, talk, live — never knowing the storm she stirred inside me. My feelings stayed hidden, carved into quiet glances and stolen moments...
+
+        [Replace this section with your full story.]
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("passwordInput").value;
+      if (password === "6204563123") {
+        document.getElementById("story").style.display = "block";
+      } else {
+        alert("Incorrect password. Please try again.");
+      }
+    }
+  </script>
+</body>
+</html>
